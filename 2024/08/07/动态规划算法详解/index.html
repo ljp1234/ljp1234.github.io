@@ -4,14 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>动态规划算法详解 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="引言动态规划（Dynamic Programming, DP）是一种用于解决具有重叠子问题和最优子结构性质问题的算法设计技巧。它通过将复杂问题分解为更小的子问题，记录子问题的解以避免重复计算，从而提高算法的效率。本文将详细介绍动态规划的基本原理、常见应用场景及其应用示例。 动态规划的基本原理动态规划的核心思想是利用历史计算结果来解决当前问题。其基本步骤包括：  定义状态：确定存储子问题解的数组或变">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动态规划算法详解">
+<meta property="og:url" content="http://example.com/2024/08/07/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="引言动态规划（Dynamic Programming, DP）是一种用于解决具有重叠子问题和最优子结构性质问题的算法设计技巧。它通过将复杂问题分解为更小的子问题，记录子问题的解以避免重复计算，从而提高算法的效率。本文将详细介绍动态规划的基本原理、常见应用场景及其应用示例。 动态规划的基本原理动态规划的核心思想是利用历史计算结果来解决当前问题。其基本步骤包括：  定义状态：确定存储子问题解的数组或变">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-07T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-08-07T06:45:13.608Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="动态规划">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -67,60 +74,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-FirstBlog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/08/07/FirstBlog/" class="article-date">
-  <time class="dt-published" datetime="2024-08-07T04:00:00.000Z" itemprop="datePublished">2024-08-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>►<a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/%E7%BC%96%E7%A8%8B/">编程</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/07/FirstBlog/">First Blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>Hexo 是一个快速、简洁且高效的博客框架。本文将介绍如何使用 Hexo 搭建一个个人博客，包括安装 Hexo、创建新文章和部署博客的步骤。</p>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>在开始之前，请确保你已经安装了 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a> 和 <a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>。</p>
-<ol>
-<li>使用 npm 安装 Hexo：<pre><code class="sh">npm install -g hexo-cli
-</code></pre>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/07/FirstBlog/" data-id="clzjhjwk00000tgvkh8mb475y" data-title="First Blog" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-动态规划算法详解" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-动态规划算法详解" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/08/07/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/" class="article-date">
   <time class="dt-published" datetime="2024-08-07T04:00:00.000Z" itemprop="datePublished">2024-08-07</time>
@@ -137,8 +91,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/07/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3/">动态规划算法详解</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      动态规划算法详解
     </h1>
   
 
@@ -181,109 +135,28 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-事例文章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/08/07/%E4%BA%8B%E4%BE%8B%E6%96%87%E7%AB%A0/" class="article-date">
-  <time class="dt-published" datetime="2024-08-07T04:00:00.000Z" itemprop="datePublished">2024-08-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>►<a class="article-category-link" href="/categories/%E6%8A%80%E6%9C%AF/%E7%BC%96%E7%A8%8B/">编程</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2024/08/07/FirstBlog/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/08/07/%E4%BA%8B%E4%BE%8B%E6%96%87%E7%AB%A0/">示例文章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>这是一个示例文章，用于演示如何将 Markdown 文件发布到 Hexo 中。</p>
-<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><p>这里是文章的正文内容。</p>
-<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>这篇文章演示了如何将 Markdown 文件发布到 Hexo 中。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/07/%E4%BA%8B%E4%BE%8B%E6%96%87%E7%AB%A0/" data-id="clzjhjwkf000ntgvk8toi0zu5" data-title="示例文章" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A4%BA%E4%BE%8B/" rel="tag">示例</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/07/29/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2024-07-29T03:51:27.346Z" itemprop="datePublished">2024-07-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          First Blog
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/07/29/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2024/08/07/%E4%BA%8B%E4%BE%8B%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">示例文章</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/29/hello-world/" data-id="clzjhjwk40001tgvkavxw5cq1" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
